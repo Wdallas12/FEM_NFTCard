@@ -1,0 +1,109 @@
+/* ---- LAYOUT ----*/
+.attribution{
+    display: none;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    padding: 20px;
+    clear: both;
+
+/* -- STYLE -- */
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+
+}
+.value{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 25px;
+}
+.credit{
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+body{
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.credit img{
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+.hoverIcon{
+    float: left;
+    margin-left: 200px;
+    width: 50px;
+    margin-top: 300px;
+    transform: translate(190%, 400%);
+    visibility: hidden;
+}
+
+/* ---- STYLES ----*/
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+#card > img{
+    border-radius: 10px;
+}
+h1, #creator{
+    color: white;
+    font-family: "Outfit";
+}
+p, #timeLeft, h4{
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit";
+    font-weight: 300;
+}
+#eth{
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit";
+    font-size: 16px;
+}
+#timeLeft{
+    font-size: 16px;
+}
+h1{
+    font-size: 24px;
+    line-height: 36px;
+}
+p{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* ---- MEDIA QUERIES ---- */
+@media (max-width: 400px) {
+    body{
+        padding: 20% 5%;
+    }
+    #card{
+        max-width: 90%;
+        margin: 0;
+    }
+}
+@media (hover: hover){
+    #mainImage:hover {
+        opacity: 0.3;
+        background-color: hsl(178, 100%, 50%);
+    }
+    .hoverIcon:hover {
+        visibility: visible;
+    }
+}
+@media (hover: hover){
+    h1:hover , #creator:hover {
+        color:hsl(178, 100%, 50%);
+    }
+}
